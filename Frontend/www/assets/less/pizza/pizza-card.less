@@ -1,10 +1,83 @@
-.pizza-card {
-  img {
-    max-width: 250px;
-  }
+body {
+	background-color: lighten(gray, 47%);
 
-  h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
-  }
+}
+
+.list {
+	margin-right: 330px;
+	margin-left: 20px;
+}
+
+@media	(max-width:	1000px) {
+	.list {
+		margin-right: 310px;
+		margin-left: 0px;
+	}
+}
+
+.description {
+	height: 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pizza-card {
+	position: relative;
+	margin-top: 35px;
+	
+	.icon {
+		max-width: 290px;
+		width: 100%;
+	}
+	
+	@media	(max-width:	1350px) {
+		img {
+			max-width: 250px;
+		} 
+	}
+
+	h2 {
+		color: @mainColor;
+		font-family: Times New Roman;
+		font-weight: bold;
+	}
+	
+	.info {
+		text-align: center;
+		
+		p {
+			margin: 0px;
+		}
+		
+		h1 {
+			margin-bottom: 0px;		
+		}
+		
+		span {
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+	
+	.type {
+		color: @mainColor;
+		margin-bottom: 0px;
+		font-size: 12px;
+	}
+	
+	.btn-warning {
+		background-color: @mainColor;
+	}
+	
+	.btn-warning:hover {
+		background-color: darken(@mainColor, 2%);
+	}
+	
+	.label-danger, .label-success{
+		font-size: 18px;
+		position: absolute;
+		right: 5px;
+		top: -10px;
+		padding: 5px 10px;
+	}
 }
