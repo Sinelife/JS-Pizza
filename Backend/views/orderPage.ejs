@@ -1,0 +1,64 @@
+<% include common/header.ejs %>
+
+<div id="pageForOrder">
+	<div class="row">
+		<p class="contact">1. Контактні дані</p>
+		<div class="col-md-7">
+			<form class="form-horizontal">
+				<div class="form-group" id="fieldsName">
+					<label class="control-label col-sm-2">Ім'я</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="inputName" type="text" placeholder="Ім'я Фамілія" />
+						<span class="wrong wrongName">Введіть тільки власне ім’я, без цифр</span>
+					</div>
+				</div>
+                
+				<div class="form-group" id="fieldsPhone">
+					<label class="control-label col-sm-2">Телефон</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="inputPhone" type="text" placeholder="+380994010999" />
+						<span class="wrong wrongPhone">Введіть номер телефону у форматі +380 або почніть з 0</span>
+					</div>
+				</div>
+                
+				<div class="form-group" id="fieldsAddress">
+					<label class="control-label col-sm-2">Адреса</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="inputAddress" type="text" placeholder="Київ, вул Спаська, 2" />
+					</div>
+				</div>
+                
+			</form>
+		</div>
+        
+		<div class="col-md-5">
+			<div class="orderInfo">
+				<p class="title">Інформація про замовлення</p>
+				<p><span>Приблизний час доставки:</span> невідомий</p>
+				<p><span>Адреса доставки:</span> невідома</p>
+			</div>
+		</div>
+        
+	</div>
+	<button type="button" class="btn btn-warning btn-md next">Далі ></button>
+</div>
+
+<div id="order">
+	<div class="r1">
+		<span class="zam">Замовлення</span>
+		<span class="badge" id="amountAllPizza">0</span>
+		<span class="cleanPizzas"><a href="#">Очистити замовлення</a></span>
+	</div>
+	<div class="orders">
+
+	</div>
+	<div class="r3">
+		<p id="totalPrice">
+			<span class="sum-title">Сума замовлення</span>
+			<span class="sum-number"><span id="sum">199</span> грн</span>
+		</p>
+		<a href="http://localhost:5050" class="btn btn-default btn-lg change" id="editOrder">Редагувати замовлення</a>
+	</div>
+</div>
+
+<% include common/footer.ejs %>

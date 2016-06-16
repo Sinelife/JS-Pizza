@@ -1,7 +1,38 @@
 <% include common/header.ejs %>
 
-<div class="">
-    Main Page Content
-</div>
+<br></br>
+    <div class="types text-center list">
+        <h2><span id="type">Усі піци</span> <span id="count" class="badge">8</span></h2>
+        <ul class="nav nav-pills">
+            <li id="all" class="active"><a href="#">Усі</a></li>
+            <li id="meat"><a href="#">М'ясні</a></li>
+            <li id="pineapple"><a href="#">З ананасоми</a></li>
+            <li id="mushroom"><a href="#">З грибами</a></li>
+            <li id="seafood"><a href="#">З морепродуктами</a></li>
+            <li id="vega"><a href="#">Вега</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid list">
+        <div class="row left" id="pizza_list"></div>
+        
+        <div id="order-panel">
+            <div class="r1">
+                <span class="title">Замовлення</span>
+                <span class="badge" id="amountAllPizza">0</span>
+                <span class="title2"><a href="#">Очистити замовлення</a></span>
+            </div>
+            <div class="orders">
+
+            </div>
+            <div class="r3">
+                <p id="totalPrice">
+                    <span class="sum-title">Сума замовлення</span>
+                    <span class="sum-number"><span id="sum">199</span> грн</span>
+                </p>
+                <a href="http://localhost:5050/order.html" class="btn btn-warning btn-lg " id="doOrder">Замовити</a>
+            </div>
+        </div>
+    </div>
 
 <% include common/footer.ejs %>

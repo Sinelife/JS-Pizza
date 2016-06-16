@@ -176,6 +176,8 @@ function updateCart()
     Storage.set("cart", Cart);
 }
 
+
+
 exports.removeFromCart = removeFromCart;
 exports.addToCart = addToCart;
 
