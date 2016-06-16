@@ -1,0 +1,113 @@
+.pizza-card {
+	position: relative;
+	margin-top: 40px;
+	
+    .pizza-icon {
+        width: 100%;
+		max-width: 300px;
+	}
+	
+	@media	(max-width:	1300px) {
+		.pizza-icon {
+			max-width: 260px;
+		} 
+	}
+    
+    .pizzaInfo {
+		text-align: center;
+		
+        span {
+            margin-bottom: 6px;
+			display: block;
+		}
+        
+		p {
+			margin: 0px;
+		}
+		
+		h1 {
+			margin-bottom: 0px;		
+		}
+	}
+
+	h2 {
+        font-weight: bold;
+		color: @color;
+		font-family: Arial;
+    }
+	
+	.type {
+		color: gray;
+		margin-bottom: 0px;
+		font-size: 14px;
+	}
+	
+
+	.buy-big:hover, .buy-small:hover {
+		background-color: darken(@color, 4%);
+	}
+	
+	.new, .popular {
+        position: absolute;
+		right: 10px;
+		top: -15px;
+        padding: 7px 11px;
+		font-size: 20px;	
+	}
+}
+
+.wrong {
+    display: none;
+	color: #970c02;
+}
+
+#pageForOrder {
+	margin: 170px 360px 210px 50px;
+	
+	.orderInfo {
+		background-color: #fff;
+		padding: 15px;
+        border: 1px solid rgba(0,0,0,.1);
+		border-left: 6px solid @color;
+		border-radius: 4px;
+        
+        span {
+            font-weight: bold;
+        }
+        
+        .title {
+            font-size: 20px;
+        }
+	}
+	
+	.next {
+		width: 100px;
+		float: right;
+		font-weight: bold;
+	}
+    
+    .contact {
+        margin-left: 20px;
+		font-size: 24px;
+	}
+}
+
+.description {
+    overflow: hidden;
+	text-overflow: ellipsis;
+	height: 70px;
+	height: 70px;
+}
+
+
+.menu {
+	margin-right: 330px;
+	margin-left: 10px;
+}
+
+@media	(max-width:	950px) {
+	.menu {
+		margin-right: 320px;
+		margin-left: 0px;
+	}
+}
